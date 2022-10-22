@@ -25,7 +25,7 @@ class InvoiceFactory extends Factory
             $paidDate = NULL; 
         }
         return [
-            'customer_id' => Customer::class(), 
+            'customer_id' => Customer::factory(), 
             'amount' => $this->faker->numberBetween(100, 20000), 
             'status' => $status, 
             'bill_date' => $this->faker->dateTimeThisDecade(), 
